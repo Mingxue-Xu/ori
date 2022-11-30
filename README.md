@@ -11,10 +11,10 @@ The intermediate and final results are saved in `log/res/oi/user_tiny/`.
 All the configuration files are in `config/`. The entry configuration file is `config/*.yaml` (e.g. config/oi_user_tiny.yaml) to redirect to the other configuration files for different functional modules.
 
 There are four functional modules in this repository:
-- *dataset*: how to extract the raw data of data provenance from the original dataset
-- *metadata*: how to split the extracted raw data to facilitate the shadow training
-- *model*: the details about how to train the target model and shadow model
-- *infer*: the details about how to train and test the meta model for the final data provenance inference
+- **dataset**: how to extract the raw data of data provenance from the original dataset
+- **metadata**: how to split the extracted raw data to facilitate the shadow training
+- **model**: the details about how to train the target model and shadow model
+- **infer**: the details about how to train and test the meta model for the final data provenance inference
 
 Change the information in the `config/*/*.yaml` (e.g. config/dataset/oi_user_tiny.yaml) to customize any of the above modules' parameters.
 
@@ -23,7 +23,7 @@ Change the information in the `config/*/*.yaml` (e.g. config/dataset/oi_user_tin
 ## Contact
 If you have any questions about this repository or the paper, please don't hesitate to contact the repository owner or ping <m.xu21@imperial.ac.uk>.
 
-## Cite
+## Citation
 If you would like to cite this work, please use the following information:
 ```text
 @article{
