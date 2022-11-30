@@ -1,0 +1,6 @@
+setting: "user_tiny"
+raw: "config/dataset/oi_{}.yaml"
+meta: "config/metadata/oi_{}.yaml"
+target: "config/model/oi_{}_target.yaml"
+proxy: "config/model/oi_{}_proxy.yaml"
+infer: "config/infer/oi_{}.yaml"

@@ -1,0 +1,34 @@
+P:
+  target: 1
+  proxy: 2
+  extra: 1
+inter:
+  proxy: 1/3 # mem eqset
+intra:
+  target: 1/2 # training dataset
+  proxy:  2/3 #
+  extra: 1
+data: "data/meta/oi/oi_user_tiny_label.csv"
+data_t: "data/meta/oi/oi_user_tiny.csv"
+eqset: 'AuthorProfileURL'
+raw: 'ImageID'
+label: 'LabelName'
+target:
+  - "target_train"
+  - "target_test"
+proxy:
+  - "origin_train"
+  - "meta_pos"
+  - "meta_neg"
+extra:
+  - "extra"
+files:
+  target: 
+    target_train: "data/meta/oi/user_tiny/target_train.csv"
+    target_test: "data/meta/oi/user_tiny/target_test.csv"
+  proxy:
+    origin_train: "data/meta/oi/user_tiny/origin_train.csv"
+    meta_pos: "data/meta/oi/user_tiny/meta_pos.csv"
+    meta_neg: "data/meta/oi/user_tiny/meta_neg.csv"
+  extra:
+    extra: "data/meta/oi/user_tiny/extra.csv"

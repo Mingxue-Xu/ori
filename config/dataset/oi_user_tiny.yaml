@@ -1,0 +1,78 @@
+root: "/data/oi"
+setting: "user_tiny"
+label:
+  - "test-annotations-human-imagelabels-boxable_new.csv"
+  - "train-annotations-human-imagelabels-boxable_new.csv"
+  - "validation-annotations-human-imagelabels-boxable_new.csv"
+user:
+  - "test-images-with-rotation_new.csv"
+  - "train-images-boxable-with-rotation_new.csv"
+  - "validation-images-with-rotation_new.csv"
+multi-label:
+  - "test-annotations-bbox_new.csv"
+  - "oidv6-train-annotations-bbox_new.csv"
+  - "validation-annotations-bbox_new.csv"
+class_description: "oidv6-class-descriptions_new.csv"
+key_words:
+  - "boat"
+  - "canoe"
+  - "watercraft"
+  - "airplane"
+  - "helicopter"
+  - "aircraft"
+  - "wheel"
+  - "car"
+  - "truck"
+  - "vehicle"
+  - "taxi"
+  - "rocket"
+  - "van"
+  - "barge"
+  - "train"
+  - "snowmobile"
+  - "unicycle"
+  - "bus"
+  - "bicycle"
+  - "ambulance"
+  - "cart"
+  - "aerial"
+  - "road"
+  - "plane"
+  - "flight"
+  - "aerospace"
+  - "ship"
+multi_label_key:
+  - "Clothing"
+  - "Person"
+  - "Tree"
+  - "Building"
+  - "Food"
+  - "Furniture"
+  - "Animal"
+  - "Vehicle"
+  - "Kitchenware"
+  - "Tool"
+key: 'AuthorProfileURL'
+data: 'ImageID'
+conf: 'Confidence'
+label_col: 'LabelName'
+label_name: 'DisplayName'
+label_task: 'multi_label'
+limit: 200
+eqset: "yelp_academic_dataset_user.json"
+csv: "yelp_academic_dataset_user.csv"
+col: "yelping_since"
+start_date: "2009-12-31 23:59:59"
+val: "review_count"
+num: 1
+categories: "Health & Medical"
+label_origin: "stars"
+label_thed: 3
+save:
+  filename: "data/meta/oi/oi_{}.csv"
+  label_file: "data/meta/oi/oi_{}_label.csv"
+  cols:
+    - "AuthorProfileURL"
+    - "ImageID"
+    - "LabelName"
+target_path: "data/raw/oi/{}/"

@@ -1,0 +1,24 @@
+epochs: 100
+lr: 5e-5
+loss: 'binary_crossentropy'
+batch_size: 156
+steps_per_epoch: 1
+train_set: "data/meta/oi/user_tiny/target_train.csv"
+test_set: "data/meta/oi/user_tiny/extra.csv"
+feature: "ImageID"
+label: "multi_label"
+save_dir: "data/model/oi/save/user_tiny/target/model.h5"
+num_class: 10
+class_idx:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+data_path: "data/raw/user_tiny/"
+root: "data/raw/oi/user_tiny/"
