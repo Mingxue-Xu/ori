@@ -1,9 +1,9 @@
-from pi.data_loader.loader import oi_loader
-from pi.partition.partitioner import oi_partitioner
-from pi.data_loader.util import *
-from pi.train.target import *
-from pi.train.infer import oi_infer
-from pi.inspect.bias import oi_bias
+from ori.data_loader.loader import oi_loader
+from ori.partition.partitioner import oi_partitioner
+from ori.data_loader.util import *
+from ori.train.target import *
+from ori.train.infer import oi_infer
+from ori.inspect.bias import oi_bias
 import yaml
 with open("config/oi_user_tiny.yaml", 'r') as stream:
     cfg = yaml.safe_load(stream)
